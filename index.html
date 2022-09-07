@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de crédito</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+    <form action="">
+
+        <div class="input-group">
+            <input class="input-group_input" placeholder=" " type="text" maxlength="19"  id="numero" oninput="numeroTarjeta.innerText = numero.value">
+            <label class="input-group_label" for="numero">Numero tarjeta: </label>
+        </div>
+
+        <div class="input-group">
+            <input class="input-group_input" placeholder=" " type="text" maxlength="30" id="nombre" oninput="nombreTarjeta.innerText = nombre.value">
+            <label class="input-group_label" for="nombre">Nombre titular: </label>
+        </div>
+
+        <div class="input-group">
+            <input class="input-group_input" placeholder=" " type="text" id="vencimiento" oninput="fechaTarjeta.innerText = vencimiento.value">
+            <label class="input-group_label" for="vencimiento">Fec. venc.</label>
+        </div>
+
+        <div class="input-group" id="seguridadPadre">
+            <input class="input-group_input" placeholder=" " type="text" id="codSeg" oninput="seguridadTarjeta.innerText = codSeg.value">
+            <label class="input-group_label" for="codSeg">Cod. Seg</label>
+        </div>
+
+        <div class="input-group">
+            <button type="button">Enviar</button>
+        </div>
+
+
+        <div class="container">
+            <div class="tarjeta">
+                <div class="card front">
+                    <div class="numeroTarjeta" id="numeroTarjeta">xxxx-xxxx-xxxx-xxxx</div>
+                    <div class="nombreTarjeta" id="nombreTarjeta">PECHUAN CAPRA ESTEBAN</div>
+                    <div class="fechaTarjeta" id="fechaTarjeta">12/30</div>
+                </div>
+
+                <div class="card back">
+                    <div class="seguridadTarjeta" id="seguridadTarjeta">999</div>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+
+</body>
+</html>
